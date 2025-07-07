@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SonicLogo';
+    src: url('fonts/SonicLogoJP.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #aa7bc3;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #2A125E;
+    z-index: 999;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    align-items: center; /* Vertically align items inside */
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    height: 60px; /* Match navbar height */
+    padding: 0 24px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* light highlight */
+    color: #f8e16c;
+}
+
+.nav-item-selected {
+    position: relative;
+}
+
+.nav-item-selected::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 24px;
+    right: 24px;
+    height: 2px; /* Thin line */
+    background-color: white;
+    border-radius: 1px;
+}
+
+.nav-item-selected:hover::after{
+    background-color: #f8e16c;
+}
+
+#home {
+    height: 130px;
+    transition: 0.3s;
+}
+
+#home:hover{
+    scale: 115%;
+    color: #f8e16c;
+}
