@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download — Sonic & Mighty: Hypnosis Havoc</title>
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="download.css">
 </head>
 <body>
 
@@ -17,11 +18,20 @@
             </li>
             <li><a href="download.html" class="nav-item nav-item-selected">Download</a></li>
             <li><a href="updates.html" class="nav-item">Updates</a></li>
+            <li><a href="media.html" class="nav-item">Media</a></li>
             <li><a href="socials.html" class="nav-item">Socials</a></li>
         </ul>
     </nav>
 
     <!-- Page content -->
-
+    <div class="container">
+        <div class="middle">
+            <div class="inner">
+                <a href="assets/HomeLogo.png" download="HomeLogo.png" id="downloadLink" style="display: none;"></a>
+                <input class="download" type="image" src="assets/Download_Button.png" onclick="download()"/>
+            </div>
+        </div>
+    </div>
+    <script src="download.js"></script>
 </body>
 </html>
