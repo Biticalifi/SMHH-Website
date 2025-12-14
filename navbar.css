@@ -50,33 +50,6 @@ body::before {
     align-items: center;
 }
 
-/* Desktop (fine pointer, hover supported) */
-@media (pointer: fine) and (hover: hover) {
-    .nav-links {
-        overflow-x: auto; /* shows scrollbar */
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: auto; /* normal scroll */
-    }
-}
-
-/* Touch devices (coarse pointer, no hover) */
-@media (pointer: coarse) and (hover: none) {
-    .nav-links {
-        overflow-x: auto; /* still scrollable */
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch; /* momentum scroll */
-    }
-
-    /* hide scrollbar visually */
-    .nav-links::-webkit-scrollbar {
-        display: none;
-    }
-    .nav-links {
-        -ms-overflow-style: none;  /* IE/Edge */
-        scrollbar-width: none;     /* Firefox */
-    }
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -86,6 +59,13 @@ body::before {
     gap: 0;
     margin: 0;
     padding: 0;
+
+    /* Scrolling on overflow */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Shows scrollbar on desktop, scrollable on mobile */
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scroll on iOS */
+    touch-action: pan-x; /* Enable horizontal swipe on Android */
 }
 
 .nav-links li:first-child {
@@ -103,7 +83,8 @@ body::before {
     height: 60px; /* Match navbar height */
     padding: 0 64px;
     transition: background-color 0.3s;
-    flex-shrink: 0;
+
+    flex-shrink: 0; /* Prevent links from shrinking and breaking scroll */
 }
 
 .nav-item{
