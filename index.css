@@ -73,11 +73,12 @@
 
 .triangles {
     display: block;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: auto;
     position: relative;
     z-index: 2;
-    padding-bottom: 4vw;
+    margin-bottom: clamp(16px, 4vw, 48px);
 }
 
 @media (max-width: 1000px) {
