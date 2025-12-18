@@ -15,7 +15,6 @@
 
 #white-container{
     margin: 0;
-    width: 100%;
     background-color: white;
     position: relative;
     z-index: 1;
@@ -75,12 +74,12 @@
     display: block;
     width: 100vw;
     max-width: none;
-    height: auto;
     position: relative;
     z-index: 2;
     margin-bottom: clamp(16px, 4vw, 48px);
 
-    outline: 2px solid blue;
+    outline: 2px solid green;
+    margin-left: calc(50% - 50vw);
 }
 
 @media (max-width: 1000px) {
