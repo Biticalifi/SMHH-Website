@@ -12,7 +12,7 @@
 
 .download-text{
     font-family: "SonicLogo";
-    font-size: 24px;
+    font-size: max(1.6vw, 16px);
     color: white;
     text-align: justify;
     text-shadow: 0px 3px 2px black;
