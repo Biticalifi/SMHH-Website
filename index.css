@@ -79,6 +79,8 @@
     position: relative;
     z-index: 2;
     margin-bottom: clamp(16px, 4vw, 48px);
+
+    outline: 2px solid red;
 }
 
 @media (max-width: 1000px) {

@@ -21,12 +21,14 @@
 }
 
 .download-button {
-    width: 40vw;
-    max-width: 384px;
+    width: auto;
     height: auto;
+    max-width: 384px;
+    max-height: 40vh;
     cursor: pointer;
     border-radius: 100px;
     transition: 0.3s;
+    aspect-ratio: 1/1;
 }
 
 .download-button:hover{
