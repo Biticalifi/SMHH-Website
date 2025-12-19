@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'SonicLogo';
-    src: url('/fonts/SonicLogoJP.ttf') format('truetype');
+    src: url('../fonts/SonicLogoJP.ttf') format('truetype');
 }
 
 html {
