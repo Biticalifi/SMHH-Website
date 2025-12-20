@@ -24,6 +24,8 @@
     margin: 0;
     width: 100%;
     background-color: white;
+    background: repeating-conic-gradient(white 0% 25%, rgb(240, 240, 240) 0% 50%);
+    background-size: 100px 100px; 
     position: relative;
     z-index: 1;
     display: block;
@@ -84,6 +86,14 @@
     height: auto;
     object-fit: cover;
     object-position: bottom center;
+}
+
+#mighty{
+    filter: drop-shadow(-2px 3px 2px black);
+}
+
+#sonic{
+    filter: drop-shadow(3px 3px 2px black);
 }
 
 .video-container {
@@ -169,5 +179,9 @@
 
     .art {
         max-width: 50%;
+    }
+
+    .logo{
+        margin-top: 24px;
     }
 }
