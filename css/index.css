@@ -201,4 +201,8 @@
     .logo{
         margin-top: 24px;
     }
+
+    .triangles {
+        height: 6rem;
+    }
 }
