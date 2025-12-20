@@ -1,15 +1,6 @@
-#top-container {
+.top-container {
     margin-top: 7vw;
     width: 100%;
-
-    /* position: relative;
-    z-index: 0;
-    background-image: url('../assets/HomeLogo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    flex: 1 */
 }
 
 .pc-layout {
@@ -28,29 +19,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 60rem;
     height: 100%;
     z-index: -1;
-    /* background-image: url("../assets/Doodles.svg");
+    background-image: url("../assets/DoodlesLeft.png");
     background-repeat: repeat-y;
-    background-size: auto; */
-    scale: 90%;
-    translate: -5%;
+    background-size: 100%;
 }
 
 .background-element-right{
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 60rem;
     height: 100%;
     z-index: -1;
-    /* background-image: url("../assets/Doodles.svg");
-    background-repeat: none;
-    background-size: auto; */
-    scale: 90%;
-    translate: 5%;
-    transform: scaleX(-1);
+    background-image: url("../assets/DoodlesRight.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
 }
 
 #white-container{
@@ -70,7 +56,6 @@
     padding: 0 4%;
     box-sizing: border-box;
     margin: 0;
-    padding: 0 4%;
 }
 
 .row {
