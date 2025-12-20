@@ -13,11 +13,44 @@
 }
 
 .pc-layout {
-    display: block;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .mobile-layout {
     display: none;
+    flex: 1;
+    justify-content: center;
+}
+
+.background-element-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background-image: url("../assets/Doodles.svg");
+    background-repeat: repeat-y;
+    background-size: auto; */
+    scale: 90%;
+    translate: -5%;
+}
+
+.background-element-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background-image: url("../assets/Doodles.svg");
+    background-repeat: none;
+    background-size: auto; */
+    scale: 90%;
+    translate: 5%;
+    transform: scaleX(-1);
 }
 
 #white-container{
@@ -46,7 +79,7 @@
     padding: 0 4%;
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: calc(-24px + 1vw);
+    margin-bottom: clamp(-24px, -2vw, -8px);
 }
 
 .column {
@@ -55,7 +88,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: clamp(16px, 4vw, 32px);
 }
 
 .logo {
@@ -82,7 +115,7 @@
 }
 
 .art {
-    max-width: 30%;
+    max-width: 30rem;
     height: auto;
     object-fit: cover;
     object-position: bottom center;
@@ -114,14 +147,13 @@
 }
 
 .description {
-    margin: 0;
     font-family: "Koho";
-    font-size: max(1.8vw, 16px);
+    font-size: clamp(1rem, 2vw, 2rem);
     color: black;
     text-align: left;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 1vw;
+    padding: clamp(8px, 1.5vw, 16px);
 
     background-color: rgb(255, 217, 0);
     box-shadow: 8px 8px;
@@ -139,10 +171,10 @@
 
 .triangles {
     width: 100%;
-    height: 10vw;
-    background-image: url('../assets/TriangleLines.svg');
+    height: 10rem;
+    background-image: url('../assets/Triangles.svg');
     background-repeat: repeat-x;
-    background-size: 100%;
+    background-size: auto 100%;
 
     z-index: 2;
     margin-bottom: clamp(16px, 4vw, 48px);
