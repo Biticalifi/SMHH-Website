@@ -12,6 +12,14 @@
     flex: 1 */
 }
 
+.pc-layout {
+    display: block;
+}
+
+.mobile-layout {
+    display: none;
+}
+
 #white-container{
     margin: 0;
     width: 100%;
@@ -49,24 +57,10 @@
 }
 
 .logo {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     scale: 105%;
-}
-
-.description {
-    margin: 0;
-    font-family: "Koho";
-    font-size: max(1.8vw, 16px);
-    color: black;
-    text-align: left;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 1vw;
-
-    background-color: rgb(255, 217, 0);
-    box-shadow: 8px 8px;
-    margin: 8px 0;
+    align-self: center;
 }
 
 .art-container{
@@ -82,11 +76,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 16px;
+    gap: 20px;
 }
 
 .art {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     object-fit: cover;
     object-position: bottom center;
@@ -106,6 +100,21 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    margin: 8px 0;
+}
+
+.description {
+    margin: 0;
+    font-family: "Koho";
+    font-size: max(1.8vw, 16px);
+    color: black;
+    text-align: left;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+
+    background-color: rgb(255, 217, 0);
+    box-shadow: 8px 8px;
     margin: 8px 0;
 }
 
@@ -130,6 +139,14 @@
 }
 
 @media (max-width: 1000px) {
+    .pc-layout {
+        display: none;
+    }
+
+    .mobile-layout {
+        display: block;
+    }
+
     .top-row{
         flex-direction: column;
         padding: 0 4%;
@@ -148,5 +165,9 @@
 
     .screenshot {
         border: 3px solid black;
+    }
+
+    .art {
+        max-width: 50%;
     }
 }
