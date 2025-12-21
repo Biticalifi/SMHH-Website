@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 60rem;
+    width: clamp(24rem, 60vw, 60rem);
     height: 100%;
     z-index: -1;
     background-image: url("../assets/DoodlesLeft.png");
@@ -31,7 +31,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 60rem;
+    width: clamp(24rem, 60vw, 60rem);
     height: 100%;
     z-index: -1;
     background-image: url("../assets/DoodlesRight.png");
