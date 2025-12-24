@@ -1,15 +1,3 @@
-.container {
-    position: fixed; /* covers full viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex; /* flexbox centering */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .download-text{
     font-family: "SonicLogo";
     font-size: clamp(12px, 3vw, 24px);

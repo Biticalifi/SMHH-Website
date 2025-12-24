@@ -147,6 +147,27 @@ body {
     z-index: 2;
 }
 
+.container {
+    position: fixed; /* covers full viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* flexbox centering */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    width: auto;
+    height: auto;
+    max-width: clamp(24rem, 60vw, 60rem);
+    max-height: 75vh;
+    border-radius: 100px;
+    translate: 0px -6vh;
+}
+
 @media (max-width: 1000px) {
     
     .triangles-invert {
