@@ -42,8 +42,8 @@ html, body {
 
 .discord{
     width: 350px;
-    height: 450px;
-    max-width: 40%;
+    height: 425px;
+    max-width: 75%;
 }
 
 #black-container {
@@ -53,4 +53,14 @@ html, body {
     display: flex;
     flex-direction: column;
     display: block;
+}
+
+#logo-col{
+    margin-top: -1rem;
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+    align-self: center;
 }
