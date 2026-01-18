@@ -15,12 +15,13 @@
     max-width: 384px;
     max-height: 40vh;
     cursor: pointer;
-    border-radius: 100px;
     transition: 0.3s;
     aspect-ratio: 1/1;
+
+    content: url("../assets/Download_Button.png");
 }
 
 .download-button:hover{
     scale: 105%;
-    background-color: rgba(255, 255, 255, 0.2); /* light highlight */
+    content: url("../assets/Download_GIF.gif");
 }
